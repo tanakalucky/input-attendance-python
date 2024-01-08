@@ -1,4 +1,4 @@
-FROM --platform=amd64 python:3.11-slim-buster
+FROM python:3.11-slim-buster
 
 RUN apt-get update && apt-get install -y git vim locales-all gnupg wget curl
 
@@ -32,6 +32,6 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 RUN chmod +x start_service.sh
-ENTRYPOINT ["start_service.sh" ]
+ENTRYPOINT ["start_service.sh"]
 
 EXPOSE 8000
