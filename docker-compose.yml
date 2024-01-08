@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  input-attendance:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workdir
+    tty: true
+
