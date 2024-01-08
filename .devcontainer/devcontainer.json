@@ -1,6 +1,15 @@
 {
-  "service": "input-attendance",
-  "dockerComposeFile": "../docker-compose.yml",
+  "name": "input-attendance",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "portsAttributes": {
+    "onAutoForward": {
+      "label": "Application",
+      "onAutoForward": "ignore"
+    }
+  }, 
+  "postStartCommand": "sh start_service.sh",
   "workspaceFolder": "/workdir",
   "customizations": {
     "vscode": {
