@@ -1,6 +1,8 @@
 version: '3.9'
 services:
   input-attendance:
+    ports: 
+      - 8000:8000
     build:
       context: .
       dockerfile: Dockerfile
