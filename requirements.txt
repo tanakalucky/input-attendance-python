@@ -3,3 +3,4 @@ selenium
 webdriver-manager
 fastapi
 uvicorn[standard]
+python-dotenv
