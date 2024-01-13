@@ -1,4 +1,4 @@
-FROM --platform=amd64 python:3.11-slim-buster
+FROM python:3.11-slim-buster
 
 RUN apt-get update && apt-get install -y git vim locales-all gnupg wget curl
 
