@@ -11,6 +11,7 @@
   }, 
   "postStartCommand": "sh start_service.sh",
   "workspaceFolder": "/workdir",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workdir,type=bind",
   "customizations": {
     "vscode": {
       "extensions": ["eamodio.gitlens", "ms-python.black-formatter"],
